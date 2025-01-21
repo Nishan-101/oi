@@ -1,0 +1,210 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    
+}
+.container4{
+    height: 100vh;
+    width: 100%; 
+    background-color:grey;  
+
+}
+.navbar{
+    height: 11vh;
+    width: 100%;
+   background-color: rgb(0, 0, 0); 
+   justify-content: space-between;
+    display: flex;
+
+}
+.logo{
+    height: 10vh;
+    width: 13%; 
+    /* background-color: beige;  */
+  
+
+
+
+}
+.logo img{
+    height: 10vh;
+    width: 100%;
+    margin: 5px;
+    /* padding: 5px; */
+    border-radius: 10px;
+}
+.nav{
+    height: 10vh;
+    width: 40%;
+    /* background-color: brown; */
+    justify-content: center;
+    display: flex;
+    justify-content: center;
+  
+    
+}
+.nav ul{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: space-evenly;
+    font-size: 25px;
+    padding: 20px;
+    
+    font-family:'Times New Roman', Times, serif;
+    color: white;
+    
+}
+.nav ul li{
+    display: flex;
+   align-items: center;
+   justify-content: space-evenly;
+ margin-right: 43px;
+ color: aliceblue;
+}
+
+.nav ul li:hover{
+  color:blue;
+    /* background-color: blueviolet; */
+    display: inline-block;
+    position: relative;
+  border-bottom: 2px solid;
+}
+
+/* Container for Main Content */
+.container {
+    max-width: 1200px; /* Limits the width of the content */
+    margin: 32px auto; /* Centers the content with margin on top/bottom */
+    padding: 0 16px; /* Adds padding on left and right */
+    background-color: #000;
+}
+h2{
+   padding: 10px;
+   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+/* Blog Post Container Styling */
+.blog-post {
+    background:rgba(172, 255, 47, 0.522); /* White background for blog posts */
+    margin-bottom: 32px; /* Adds space between blog posts */
+    padding: 24px; /* Padding inside each blog post */
+    border-radius: 8px; /* Rounded corners for blog post box */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Adds subtle shadow */
+}
+.blog-post h2{
+    margin: 3px;
+    justify-content: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 30px;
+}
+
+/* Blog Post Image Styling */
+.blog-post img {
+    width: 500px; /* Sets the width of the image */
+    height: 300px; /* Sets the height of the image */
+    border-radius: 8px; /* Rounded corners for the image */
+    margin-bottom: 16px; /* Adds space below the image */
+    display: block; /* Ensures the image is a block element */
+    margin-left: auto; /* Centers the image horizontally */
+    margin-right: auto; /* Centers the image horizontally */
+    background:rgba(172, 255, 47, 0.345);
+}
+
+/* Blog Post Paragraph Styling */
+.blog-post p {
+    text-align: justify; /* Justifies the text for even spacing */
+    font-family: 'Times New Roman', Times, serif; /* Sets a serif font for paragraphs */
+    font-size: 20px; /* Sets font size for paragraphs */
+    line-height: 30px;
+}
+.cont{
+    height: 350vh;
+    width: 100%;
+    background-color: gray;
+}
+
+/* for footer */
+
+footer{
+    width: 100%;
+    position: relative;
+    bottom: 0;
+    background:linear-gradient(to right,#00093cf6,#2d0b00f8);
+    color: #fff;
+    padding: 100px 0 30px;
+    border-top-left-radius: 80px;
+    font-size: 18px;
+     line-height: 10px;
+
+}
+ footer .row{
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    flex-direction: row;
+}
+.col{
+    flex-basis: 15%;
+    padding: 5px;
+   
+
+
+}
+.logo{
+    width: 80px;
+    margin-bottom: 2px;
+    margin-top: 2px;
+}
+.col h3{
+
+width: fit-content;
+margin-bottom: 40px;
+position: relative;
+
+}
+.email-id{
+    width: fit-content;
+    border-bottom: 1px solid;
+    margin: 20px 0;
+
+
+}
+.container-third{
+    height: 450px;
+    width: 85%;
+    margin: auto;
+    margin-top: 50px;
+    border: 1px solid gray;
+    overflow: hidden;
+    border-radius: 5px;
+
+}
+.con img{
+    height: 90%;
+    width: 100%;
+}
+.col ul li{
+color: #fff;
+font-size: larger;
+}
+
+.col a{
+    color: #fff;
+}
+.fot{
+    height: 5vh;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+.fot h4{
+   font-family: cursive;
+}
+
+
+

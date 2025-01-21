@@ -1,0 +1,325 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+}
+.container1{
+    height: 12vh;
+    width: 100%;
+     background-color: black; 
+}
+.navbar{
+    height: 11vh;
+    width: 100%;
+   /* background-color: rgb(0, 0, 0);  */
+   justify-content: space-between;
+    display: flex;
+
+}
+.logo{
+    height: 12vh;
+    width: 13%;
+    /* background-color: beige; */
+   /* padding: 1px; */
+
+
+}
+.logo img{
+    height: 9vh;
+ 
+    border-radius: 10px; 
+      width: 50%;
+    margin: 10px;
+    /* padding: 5px; */
+}
+.nav{
+    height: 12vh;
+    width: 40%;
+    /* background-color: brown; */
+    justify-content: center;
+    display: flex;
+    /* justify-content: center; */
+
+
+  
+    
+}
+.nav ul{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: space-evenly;
+    font-size: 25px;
+    padding: 15px;
+    
+    font-family:'Times New Roman', Times, serif;
+    color: white;
+    
+}
+.nav ul li{
+    display: flex;
+   align-items: center;
+   justify-content: space-evenly;
+ margin-right: 43px;
+ color:white;
+}
+.nav ul li:hover{
+  color: blue;
+    /* background-color: blueviolet; */
+    display: inline-block;
+    position: relative;
+  border-bottom: 2px solid;
+}
+
+body {
+    /* Background gradient from light green to light blue */
+    /*background: rgb(158, 172, 240);*/
+    background: linear-gradient(to right, #c1d462, #4796c8);
+}
+
+.text {
+    /* Font and color settings for text elements */
+    font-family: 'Times New Roman';
+    color: black;
+}
+
+#header {
+    /* Flexbox layout for header */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 80px;
+    background-color: rgb(228, 89, 101); /* Background color of header */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06); /* Subtle shadow for header */
+}
+
+.photo {
+    /* Styling for photos */
+    border-radius: 50%; /* Circular photos */
+    border: #1a1a1a 3px solid; /* Solid border */
+}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed position */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+    /* Modal content styling */
+    background-color: pink; /* Background color */
+    margin: auto; /* Centered alignment */
+    padding: 20px; /* Padding */
+    border: 1px solid #888; /* Border */
+    width: 80%; /* Width */
+    max-width: 600px; /* Max width */
+}
+
+/* The Close Button */
+.close {
+    /* Close button styling */
+    color: #aaa; /* Color */
+    float: right; /* Float to right */
+    font-size: 58px; /* Font size */
+    font-weight: bold; /* Font weight */
+}
+
+.close:hover,
+.close:focus {
+    /* Hover and focus effects for close button */
+    color: black; /* Change color */
+    text-decoration: none; /* No underline */
+    cursor: pointer; /* Pointer cursor */
+}
+
+/* General Styles for Feedback Form */
+.feedback-form-container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 30px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.feedback-form-title {
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    font-size: 32px;
+    margin-bottom: 30px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    font-weight: bold;
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"], textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+input[type="text"]:focus, textarea:focus {
+    border-color: #4CAF50;
+}
+
+textarea {
+    resize: vertical;
+}
+
+.gender-options {
+    display: flex;
+    gap: 15px;
+}
+
+.gender-options label {
+    font-size: 16px;
+    font-weight: normal;
+}
+
+button.submit-btn {
+    padding: 12px 20px;
+    font-size: 16px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.3s;
+}
+
+button.submit-btn:hover {
+    background-color: #45a049;
+}
+
+button.submit-btn:active {
+    background-color: #388e3c;
+}
+
+/* Responsive Styling */
+@media screen and (max-width: 768px) {
+    .feedback-form-container {
+        padding: 20px;
+    }
+
+    .feedback-form-title {
+        font-size: 28px;
+    }
+
+    .form-group {
+        margin-bottom: 15px;
+    }
+
+    button.submit-btn {
+        padding: 10px 18px;
+        font-size: 14px;
+    }
+}
+
+footer{
+    width: 100%;
+    position: relative;
+    bottom: 0;
+    background:linear-gradient(to right,#00093cf6,#2d0b00f8);
+    color: #fff;
+    padding: 100px 0 30px;
+    border-top-left-radius: 80px;
+    font-size: 18px;
+     line-height: 10px;
+
+}
+ footer .row{
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    flex-direction: row;
+}
+.col{
+    flex-basis: 15%;
+    padding: 5px;
+   
+
+
+}
+.logo{
+    width: 80px;
+    margin-bottom: 2px;
+    margin-top: 2px;
+}
+.col h3{
+
+width: fit-content;
+margin-bottom: 40px;
+position: relative;
+
+}
+.email-id{
+    width: fit-content;
+    border-bottom: 1px solid;
+    margin: 20px 0;
+
+
+}
+.container-third{
+    height: 450px;
+    width: 85%;
+    margin: auto;
+    margin-top: 50px;
+    border: 1px solid gray;
+    overflow: hidden;
+    border-radius: 5px;
+
+}
+.con img{
+    height: 90%;
+    width: 100%;
+}
+.col ul li{
+color: #fff;
+font-size: larger;
+}
+
+.col a{
+    color: #fff;
+}
+
+ 
+
+  
+.fot{
+    height: 5vh;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+.fot h4{
+   font-family: cursive;
+}

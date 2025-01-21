@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title><link rel="stylesheet" href="../css/about.css">
+</head>
+<body>
+    <div class="container1">
+
+
+        <div class="navbar">
+            <div class="logo">
+                <img src="../images/logo1.webp" alt="" height="68vh" width="80%">
+            </div>
+            <div class="nav">
+                <ul>
+                    <ul>
+                        <a href="../index/index.html">
+                            <li>Home</li>
+                        </a>
+                        <a href="../pages/about.html">
+                            <li>About</li>
+                        </a>
+                        <a href="../pages/blog.html">
+                            <li>Blog</li>
+                        </a>
+                        <a href="../pages/product.html">
+                            <li>Product</li>
+                        </a>
+                        <a href="../research.html">
+                            <li>Research</li>
+                        </a>
+                </ul>
+            </div>
+            
+    </div>
+
+     <!-- Page title -->
+     <header style="font-family: 'Times New Roman'; color: black; text-align: center; font-size:25px; background-color:rgb(255, 245, 240);">
+        <h1>About Us</h1>
+    </header>
+    
+    <!-- Main content container -->
+    <div class="container">
+        <section>
+            <h1 style="text-align: center;">Legacy Times </h1>
+            <!-- Company description -->
+            <p style="text-align: center;">
+                <h4>Legacy Times is a popular chain of convenience stores known for its wide range of products and easy accessibility. Offering watch items, Legacy Times caters to busy individuals and families with numerous urban and suburban locations. Customers appreciate the store's convenience, quality products, and competitive prices. Reviews highlight the friendly staff, excellent customer service, and the seamless shopping experience, making Legacy Times a go-to destination for quick and hassle-free shopping.</h4>
+            </p>
+        </section>
+    </div>
+    
+    <!-- Team section -->
+    <section>
+        <h2 style="background-color: aliceblue; font-family: 'Times New Roman'; font-size: 40px; text-align: center; color: black;">Our Team</h2>
+        <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 20px;">
+            <!-- Team member Adrian Poudyal -->
+            <div style="text-align: center; width: 30%;">
+                <img src="../images/ED908738-2FE2-4659-A6E9-2C7C387FA2E4.jpeg" alt="Adrian" class="photo" width="100%" height="auto">
+                <h1>Adrian Poudyal</h1>
+                <p class="title">Adrian Poudyal who is currently studying at Islington College, Kathmandu. He made the blog and has been very helpful to the group members.</p>
+                <button style="background-color: gray;" onclick="openModal('Adrian Poudyal', 'NP01CP4A230174@islingtoncollege.edu.np')">Contact</button>
+            </div>
+            <!-- Team member Shaswat Agrawal -->
+            <div style="text-align: center; width: 30%;">
+                <img src="../images/WhatsApp Image 2025-01-18 at 16.33.10_fa068340.jpg" alt="Shaswat" class="photo" width="100%" height="auto">
+                <h1>Shaswat Agrawal</h1>
+                <p class="title">Shaswat Agrawal made the About page and has been very helpful to the group members.</p>
+                <button style="background-color: gray;" onclick="openModal('Shaswat Agrawal', 'NP01CP4A240249@islingtoncollege.edu.np')">Contact</button>
+            </div>
+            <!-- Team member Nikhil Bhusal -->
+            <div style="text-align: center; width: 30%;">
+                <img src="../images/089084fe-5abc-4fda-83d6-18ead00ffbc5 (1).jpeg" alt="Nikhil" class="photo" width="100%" height="auto">
+                <h1>Nikhil Bhusal</h1>
+                <p class="title">Nikhil Bhusal made the Home page and has been very helpful to the group members.</p>
+                <button style="background-color: gray;" onclick="openModal('Nikhil Bhusal', 'NP01CP4A240232@islingtoncollege.edu.np')">Contact</button>
+            </div>
+        </div>
+        <div style="display: flex; justify-content: center; gap: 20px; margin-top: 20px;">
+            <!-- Team member Saugat Adhikari -->
+            <div style="text-align: center; width: 30%;">
+                <img src="../images/saugat.jpg" alt="Saugat" class="photo" width="100%" height="450vh">
+                <h1>Saugat Adhikari</h1>
+                <p class="title">Saugat Adhikari made the Research and has been very helpful to the group members.</p>
+                <button style="background-color: gray;" onclick="openModal('Saugat Adhikari', 'NP01CP4A@islingtoncollege.edu.np')">Contact</button>
+            </div>
+            <!-- Team member Gyaltsen Lama -->
+            <div style="text-align: center; width: 30%;">
+                <img src="../images/lama.jpg" alt="Gyaltsen" class="photo" width="100%" height="auto">
+                <h1>Gyaltsen lama </h1>
+                <p class="title">Gyaltsen Lama made the product Page and has been very helpful to the group members.</p>
+                <button style="background-color: gray;" onclick="openModal('Gyaltsen Lama', 'NP01CP4A@islingtoncollege.edu.np')">Contact</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modal Structure -->
+<div id="contactModal" style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.5); z-index: 1000;">
+    <div style="position: relative; margin: 100px auto; background: white; padding: 20px; width: 300px; border-radius: 10px;">
+        <span onclick="closeModal()" style="position: absolute; top: 5px; right: 5px; cursor: pointer; font-size: 20px;">&times;</span>
+        <h2>Contact Information</h2>
+        <p><strong>Name:</strong> <span id="modalName"></span></p>
+        <p><strong>Email:</strong> <span id="modalEmail"></span></p>
+        <button onclick="closeModal()">Close</button>
+    </div>
+</div>
+
+    
+    <!-- Feedback form section -->
+    <section>
+        <div class="feedback-form-container">
+            <h1 class="feedback-form-title">Feedback Form</h1>
+            <form name="messageForm" onsubmit="feedbackForm()">
+                <div class="form-group">
+                    <label for="fname">First Name:</label>
+                    <input type="text" id="fname" name="fname" required>
+                </div>
+                <div class="form-group">
+                    <label for="lname">Last Name:</label>
+                    <input type="text" id="lname" name="lname" required>
+                </div>
+                <div class="form-group">
+                    <label>Gender:</label>
+                    <div class="gender-options">
+                        <label><input type="radio" name="genderDetails" value="male" checked> Male</label>
+                        <label><input type="radio" name="genderDetails" value="female"> Female</label>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="5" placeholder="Enter your message" required></textarea>
+                </div>
+                <div class="form-group">
+                    <button type="submit" class="submit-btn">Submit</button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+
+    
+    <footer>
+
+        <div class="row">
+            <div class="col">
+                <img src="../images/logo1.webp" class="logo" alt="">
+                <p>
+                    <br> Legacy Time is the
+                    <br> <br> Retailer company for <br><br>
+                    all branded watches
+
+                    <br> <br>of luxury watches
+                    <br><br>around the globe
+
+                </p>
+            </div>
+
+            <div class="col">
+                <h1>Brands</h1><br><br>
+                <p>Rolex</p><br><br>
+                <p>Richard Mille</p><br><br>
+                <p>Casio</p><br><br>
+                <p>Rado</p><br><br>
+                <p>Louis Vuitton</p>
+
+
+            </div>
+
+            <div class="col">
+                <h1>Links</h1>
+                <ul><br><br>
+
+                    <a href="../index/index.html">
+                        <li>Home</li><br><br>
+                    </a>
+                    <a href="../pages/about.html">
+                        <li>About</li><br><br>
+                    </a>
+                    <a href="../pages/blog.html">
+                        <li>Blog</li><br><br>
+                    </a>
+                    <a href="../pages/product.html">
+                        <li>Product</li><br><br>
+                    </a>
+                    <a href="../research.html">
+                        <li>Research</li>
+                    </a>
+                </ul>
+
+
+            </div>
+            <div class="col">
+                <h1>Contact Us</h1> <br><br><br>
+                <p>+071 765987 , 9857373456 </p> <br><br>
+                <p>legacytime789@gmail.com </p><br><br>
+                <a href="../pages/contact.html">
+                    <p>Contact Form</p><br><br>kamal Pokhari, kathmandu
+                </a><br><br>
+
+
+
+
+
+
+            </div>
+
+        </div>
+
+
+
+        <br><br><br><br><br><br>
+        <div class="fot">
+        <h4>@ 2025 Legacy Watch Company. All Rights Reserved</h4>
+        
+        </div>
+
+    </footer>
+
+    <script src="../js/java.js"></script>
+
+</body>
+</html>
